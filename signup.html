@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+    
+    body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #e8f5e9;
+}
+
+.login-box, .signup-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 440px;
+    height: 480px;
+    padding: 30px;
+}
+
+header {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.input-submit {
+    margin-top: 20px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #0056b3;
+}
+
+.sign-up-link, .login-link {
+    margin-top: 15px;
+}
+
+.sign-up-link a, .login-link a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.sign-up-link a:hover, .login-link a:hover {
+    text-decoration: underline;
+}
+
+.forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="signup-box">
+        <div class="signup-header">
+            <header>Sign Up</header>
+        </div>
+        <form action="submit_signup" method="post">
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Full Name" name="fullname" autocomplete="off" required>
+            </div>
+            <div class="input-box">
+                <input type="email" class="input-field" placeholder="Email" name="email" autocomplete="off" required>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password" name="password" autocomplete="off" required>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Confirm Password" name="confirm_password" autocomplete="off" required>
+            </div>
+            <div class="input-submit">
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </div>
+            <div class="login-link">
+                <p>Already have an account? <a href="index.html">Log In</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
