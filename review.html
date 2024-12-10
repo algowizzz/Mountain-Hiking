@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Design Mastery | Testimonials section</title>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #3adc8b;
+  --secondary-color: #e8e8e8;
+  --text-dark: #0f172a;
+  --text-light: #94a3b8;
+  --white: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--secondary-color);
+}
+
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.section__container h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.section__container h1 {
+  position: relative;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.section__container h1::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 5rem;
+  background-color: var(--primary-color);
+}
+
+.section__container button{
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #3adc80, #3adc80);
+  border-radius: 50px;
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.section__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.section__card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 5rem 2rem 2rem;
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.section__card::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color: var(--primary-color);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.section__card span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  font-size: 3rem;
+  color: var(--white);
+}
+
+.section__card h4 {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+
+.section__card p {
+  margin-bottom: 2rem;
+  color: var(--text-light);
+  transition: 0.3s;
+}
+
+.section__card img {
+  margin-bottom: 1rem;
+  max-width: 100px;
+  border-radius: 100%;
+  border: 2px solid var(--primary-color);
+  transition: 0.3s;
+}
+
+.section__card h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+
+.section__card h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-light);
+  transition: 0.3s;
+}
+
+.section__card:hover::before {
+  width: 400%;
+}
+
+.section__card:hover :is(h4, h5) {
+  color: var(--white);
+}
+
+.section__card:hover :is(p, h6) {
+  color: var(--secondary-color);
+}
+
+.section__card:hover img {
+  border-color: var(--white);
+}
+    </style>
+  </head>
+  <body>
+    <section class="section__container">
+      <h2>Testimonials</h2>
+      <h1>Read what our customers love about us</h1>
+      <!-- <p>Over 200 companies frim diverse sectors consult us to enhance the
+        user experience of their products and services.</p> -->
+        <button>Read our stories</button><br><br>
+      <div class="section__grid">
+        <div class="section__card">
+          <span><i class="ri-double-quotes-l"></i></span>
+          <!-- <h4>Love the simplicity</h4> -->
+          <p>
+            Summit Seakers in Pune offers an unforgettable hiking adventure! The trails are breathtaking, and the guides are 
+            incredibly knowledgeable. I felt safe and inspired the entire journey. Highly recommended for anyone seeking a 
+            thrilling outdoor experience.
+          </p>
+          <img src="https://media.gettyimages.com/id/1564842629/photo/portrait-of-attractive-smiling-young-man-looking-at-camera-in-park-caucasian-male-handsome.jpg?b=1&s=2048x2048&w=0&k=20&c=w-bHg0CwXui4oUDaabPKdBKLbRCGDEpRPazgZ_dai3g=" alt="user" />
+          <h5>- Karan Mehta</h5>
+          <!-- <h6>Managing Director</h6> -->
+        </div>
+        <div class="section__card">
+          <span><i class="ri-double-quotes-l"></i></span>
+          <!-- <h4>Excellent Designs</h4> -->
+          <p>
+            Summit Seakers in Pune exceeded my expectations! The trails are stunning, and the team is passionate about providing 
+            an excellent experience. I learned so much about the local flora and fauna. Perfect for nature lovers!
+          </p>
+          <img src="https://media.gettyimages.com/id/1311452628/photo/i-want-to-share-my-journey-with-everyone.jpg?b=1&s=2048x2048&w=0&k=20&c=ayt3PGtXgFiD7yWn2CqklJ5PInEeHgTmbOB_h1SlJM4=" alt="user" />
+          <h5>- Aditi Sharma</h5>
+          <!-- <h6>Ceo & Founder</h6> -->
+        </div>
+        <div class="section__card">
+          <span><i class="ri-double-quotes-l"></i></span>
+          <!-- <h4>Efficient and Reliable</h4> -->
+          <p>
+            Summit Seakers offers an incredible hiking experience in Pune! The scenic trails are awe-inspiring, and the guides are 
+            friendly and proficient. Each hike was an adventure filled with awe and discovery. Perfect for adventurers seeking a 
+            unique outdoor journey!
+          </p>
+          <img src="https://media.gettyimages.com/id/1496615445/photo/portrait-of-beautiful-happy-woman-smiling-during-sunset-outdoor.jpg?b=1&s=2048x2048&w=0&k=20&c=ONGblZebygJWczON6hSOD7ZBkGiHjiwhkY_5Fn7LlLU=" alt="user" />
+          <h5>- Riya Deshpande</h5>
+          <!-- <h6>Fashion Designer</h6> -->
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
