@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajgad Fort Trek</title>
+    <style>
+        .container {
+    /* max-width: 800px; */
+    margin: 20px 50px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333; 
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Adds rounded corners to the image */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    margin-bottom: 20px; /* Adds space below the image */
+}
+
+.content {
+    padding: 15px; /* Adds internal spacing */
+    background: #f8f9fa; /* Light background for better text visibility */
+    border-radius: 10px; /* Softens the edges of the content box */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.content h1 {
+    font-size: 24px;
+    color: #fc036b; /* Vibrant title color */
+    text-align: center; /* Centers the main title */
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    font-size: 20px;
+    color: #007bff; /* Subtitles with a distinct blue */
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fc036b; /* Adds a decorative underline */
+    display: inline-block; /* Keeps the underline limited to the text */
+}
+
+.content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.content br {
+    margin-top: 15px;
+}
+
+.content a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #fc036b; /* Button color */
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Button shadow */
+    transition: all 0.3s ease;
+}
+
+.content a:hover {
+    background: #ff6796; /* Lighter shade for hover effect */
+    transform: scale(1.05); /* Subtle zoom effect */
+}
+
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1,h2{
+            text-align: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .content h1 {
+            margin: 0;
+            font-size: 10vmin;
+        }
+        .container {
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+            line-height: 1.6; */
+            /* max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+        /* }
+        .container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .content h2 {
+            font-size: 5vmin;
+            color: #044106;
+            margin-bottom: 10px;
+        }
+        .content p {
+            margin: 10px 0;
+            text-align: justify;
+            font-size: 2vmin;
+        }
+        .content ul {
+            margin: 20px 0;
+            padding-left: 20px;
+            list-style: disc;
+        }
+        .content ul li {
+            margin-bottom: 10px;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .cta a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+        }
+        .cta a:hover {
+            background: #0056b3;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px;
+            background: #f1f1f1;
+            border-top: 1px solid #ddd;
+            font-size: 0.9rem;
+        } */
+        /* body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #ffffff;
+        }
+        .container {
+            text-align: center;
+            max-width: 800px;
+            background: #ddffe2;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        .container img {
+            width: 100%;
+            height: auto;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .content p {
+            margin: 10px 0;
+            text-align: justify;
+        }
+        .content a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #005e3a;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .content a:hover {
+            background: #007bff;
+        } */
+
+        .view-points {
+            /* max-width: 800px; */
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .view-points h2 {
+            text-align: center;
+            color: #333;
+            font-size: 5vmin;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .view-points img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        .view-points h4 {
+            color: #2c3e50;
+            font-size: 3vmin;
+            margin-top: 20px;
+        }
+        .view-points p {
+            color: #555;
+            font-size: 2vmin;
+            margin-top: 10px;
+            text-align: justify;
+        }
+        .view-points br {
+            margin-top: 20px;
+        }
+        .ctn{
+            padding: 10px 20px;
+    background: linear-gradient(45deg, #fc036b, #ff6796);
+    border-radius: 50px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .ctn:hover {
+    background: linear-gradient(45deg, #ff6796, #fc036b);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+        @media (max-width: 768px) {
+            .view-points {
+                padding: 15px;
+            }
+            .view-points h2 {
+                font-size: 1.5rem;
+            }
+            .view-points h4 {
+                font-size: 1.2rem;
+            }
+            .view-points p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="treksimg/visapur1.webp" alt="Rajgad Trek Image">
+        <div class="content">
+            <h1>Visapur Fort Trek</h1>
+            <h2>About Rajgad</h2>
+            <p>Rajgad is an enormous fort. 
+                Rajgad means King of all forts. It located south-west 60 Kms 
+                from Pune. Chhatrapati Shivaji Maharaj spent a great deal of 
+                his time on this fort close to 25 years. Rajgad is famous for 
+                its construction layout. The fort can be divided into four 
+                different parts based on geographical terrain and fortification. 
+                There are three sub-plateau Machi, namely Padmavati Machi, 
+                Suvela Machi, and Sanjevani Machi, and at the centre is the 
+                Ballekilla. </p><br>
+                <h2>Why Visit Rajgad?</h2>
+                <p>Take a step into history as you take this exciting trek from 
+                Pune, visit the Padmavati temple, and the Ancient Fort ruins. 
+                Rajgad Trek is a moderate level trek that begins at the 
+                Gunjavane Village in Pune District and ends at the Rajgad Fort. 
+                Rajgad is truly the King of all forts. It is famous for its 
+                structure. Rajgad is surrounded by Sinhagad, Torna, Mangalgad, 
+                and Purandar. Popular Maharashtra trekking and weekend 
+                destination from Pune; Rajgad, lies at a distance of about 
+                65 Km from Pune. Rajgad fort to Torna fort trekking is famous 
+                amongst advanced trekkers.</p>
+                
+                <p>Often in the hustle and bustle of our daily lives, 
+                we get so caught up with the monotony that we miss 
+                out on the little things that the world has to offer us. 
+                Ancient hill forts not only provide its visitors with ancient 
+                legends but also soothe their nerves. If you are keen to 
+                explore one of these beautiful hill forts, then it is 
+                advisable to plan a tour of Rajgad fort.</p><br>
+                
+                <h2>Event Details</h2>
+                <p>Rajgad Fort Trek Event Details<br>
+                Rajgad Fort Type: Hill Fort<br>
+                Rajgad Height: 4182 feet<br>
+                Grade: Medium<br>
+                Endurance: Medium<br>
+                Base Village: Pali / Gunjavane<br>
+                Cost - Rs. 1299/- per person</p>
+        </div><br>
+        <div class="view-points">
+            <h2>View Points</h2><br>
+            <img src="treksimg/rajgad fort/rajgad4.webp" alt="">
+            <h4>1. The High-Class Architecture of the Fort </h4>
+            <p>Rajgad fort is one of the forts where Shivaji Maharaj has personally overseen the design and architecture of it. 
+            There are many things on the fort that define great architecture. There are long watchpoints (Machis) on the fort which is constructed like a snake. 
+            They were built using double fortified walls which is very interesting to see. There are also houses, temples, and small lakes that represent the 
+            rich history of the Marathas.</p><br><br>
+            <img src="treksimg/rajgad fort/rajgad5.webp" alt="">
+            <h4>2. Astonishing Views from the Fort </h4>
+            <p>The fort offers splendid views from the top in all seasons. You can see many forts like Torna, Lingana, Raigad, Sinhagad, 
+                and many more. <br>Sunrise from the fort is one of the beautiful sights to witness. </p><br><br>
+            <img src="treksimg/rajgad fort/rajgad6.webp" alt="">
+            <h4>3. A Natural Hole Created in the Wall</h4>
+            <p>On the Suvela Machi, there is a naturally created hole. This is called as Nedhe in Marathi which means hole. 
+                This hole is so big that you can spot it from the plateau as well as the distant places like Sinhagad fort. </p><br><br>
+            <img src="treksimg/rajgad fort/rajgad7.webp" alt="">
+            <h4>4. An Elephant Structure Created on a Rock on Suvela Machi </h4><br>
+            <p>There is a huge elephant-like structure created on a huge rock. You can see this while trekking in Suvela Machi on 
+                the wall where the natural hole is present.</p><br><br>
+        </div><br>
+        <a href="https://en.wikipedia.org/wiki/Visapur_Fort" target="_blank" class="ctn">Learn More</a><br><br><br>
+        <div class="location">
+            <p><strong>Location:</strong> Rajgad Fort, Pune District, Maharashtra, India</p>
+            <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.785451291297!2d73.64157007485467!3d18.24457915467907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2e04822c6f6ad%3A0xd939ddf4c09d4e0c!2sRajgad%20Fort!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+    width="650" 
+    height="500" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy">
+</iframe>
+        </div>
+    </div>
+</body>
+</html>
